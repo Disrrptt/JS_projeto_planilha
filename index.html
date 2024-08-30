@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Prestação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Prestação</h1>
+        <div class="input-group">
+            <label for="vf">Valor Financiamento (VF):</label>
+            <input type="number" id="vf" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="n">Número de Parcelas (n):</label>
+            <input type="number" id="n">
+        </div>
+        <div class="input-group">
+            <label for="i">Taxa de Juros (i) (%):</label>
+            <input type="number" id="i" step="0.01">
+        </div>
+        <button onclick="calcularPrestacao()">Calcular Prestação</button>
+
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
